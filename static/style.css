@@ -1,0 +1,154 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-image: url('/static/image/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    font-family: Arial, sans-serif;
+    padding: 20px; /* Prevent overflow on small screens */
+}
+
+.container {
+    background-color: rgba(255, 255, 255, 0.5); /* Semi-transparent background */
+    padding: 2rem;
+    border-radius: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+    max-width: 450px;
+    width: 100%;
+    font-weight: bold;
+    margin-left: 350px; /* Default for larger screens */
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    color: #2e1a1a;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.2rem;
+}
+
+label {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+    color: #2e1a1a;
+}
+
+input, select {
+    padding: 0.75rem;
+    border: 1px solid #2c0b0b;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: medium;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #7a8692;
+}
+
+button {
+    background-color: #272c32;
+    color: #fff;
+    padding: 0.8rem;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    font-size: 1rem;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #2e1a1a;
+}
+
+#result {
+    margin-top: 1.5rem;
+    text-align: center;
+    font-weight: bold;
+    color: #2e1a1a;
+}
+
+/* Fix the .a class element in the bottom right corner */
+.a {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #2e1a1a;
+    color: rgb(126, 122, 122);
+    padding: 10px;
+    border-radius: 8px;
+    cursor: pointer;
+    text-align: center;
+}
+.b {
+    text-decoration: none;
+    color: #6a6c6e;
+}
+
+.a:hover {
+    background-color: #272c32;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 1024px) {
+    .container {
+        margin-left: 200px; /* Adjust margin-left for medium screens */
+    }
+}
+
+@media (max-width: 768px) {
+    .container {
+        margin-left: 50px; /* Adjust for smaller screens */
+        max-width: 90%;
+        padding: 1.5rem;
+    }
+
+    input, select {
+        font-size: medium;
+        padding: 0.5rem;
+    }
+
+    button {
+        padding: 0.6rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .container {
+        margin-left: 0; /* Center-align for very small screens */
+        padding: 1.5rem;
+    }
+
+    h1 {
+        font-size: 1.5rem;
+    }
+
+    input, select {
+        font-size: small;
+    }
+
+    button {
+        font-size: 0.9rem;
+        padding: 0.5rem;
+    }
+
+    .a {
+        bottom: 15px;
+        right: 15px;
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+}
