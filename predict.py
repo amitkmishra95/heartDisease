@@ -2,7 +2,7 @@
 # import pickle
 # import numpy as np
 # import pandas as pd
-pip install sklearn
+# pip install sklearn
 # # Load the pre-trained model
 # model = None
 # with open('model.pkl', 'rb') as file:
@@ -45,7 +45,7 @@ import streamlit as st
 import pickle
 import numpy as np
 import pandas as pd
-import sklearn
+pip install sklearn
 # Load the pre-trained model
 model = None
 with open('model.pkl', 'rb') as file:
