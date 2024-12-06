@@ -2,7 +2,7 @@
 # import pickle
 # import numpy as np
 # import pandas as pd
-
+pip install sklearn
 # # Load the pre-trained model
 # model = None
 # with open('model.pkl', 'rb') as file:
