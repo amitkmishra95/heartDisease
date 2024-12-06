@@ -42,8 +42,8 @@
 #             st.error(f"Error: {str(e)}")
 
 import streamlit as st
-import pickle as pk
-import joblib as jb
+import pickle
+# import joblib as jb
 import numpy as np
 import pandas as pd
 # pip install sklearn
