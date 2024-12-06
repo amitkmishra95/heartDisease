@@ -48,7 +48,7 @@ import pandas as pd
 
 # Load the pre-trained model
 model = None
-with open('E://model.pkl', 'rb') as file:
+with open('model.pkl', 'rb') as file:
     model = pickle.load(file)
 
 # Custom CSS for styling
