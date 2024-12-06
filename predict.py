@@ -42,15 +42,15 @@
 #             st.error(f"Error: {str(e)}")
 
 import streamlit as st
-import pickle
-import joblib
+import pickle as pk
+import joblib as jb
 import numpy as np
 import pandas as pd
 # pip install sklearn
 # Load the pre-trained model
 model = None
 with open('model.pkl', 'rb') as file:
-    model = joblib.load(file)
+    model = jb.load(file)
 # uploaded_file = st.file_uploader("Upload your model file", type=["pkl"])
 # if uploaded_file:
 #     model = pickle.load(uploaded_file)
