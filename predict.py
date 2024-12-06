@@ -50,7 +50,7 @@ import pandas as pd
 # Load the pre-trained model
 model = None
 with open('model.pkl', 'rb') as file:
-    model = jb.load(file)
+    model = pickle.load(file)
 # uploaded_file = st.file_uploader("Upload your model file", type=["pkl"])
 # if uploaded_file:
 #     model = pickle.load(uploaded_file)
